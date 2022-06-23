@@ -67,7 +67,7 @@ function normalize(str) {
 
 function init_menu_filter() {
 
-    if (lusk_menu_ext_disabled === true || document.querySelector("#lusk_menu_filter_script").getAttribute("current_user")) {
+    if (lusk_menu_ext_disabled === true || lusk_ext_users_disable.includes(document.querySelector("#lusk_menu_filter_script").getAttribute("current_user"))) {
         return
     }
 
