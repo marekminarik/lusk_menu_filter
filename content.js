@@ -1,4 +1,4 @@
-const lusk_menu_ext_disabled = true
+const lusk_menu_ext_disabled = false
 
 let lusk_ext_users_disable = ['test']
 
