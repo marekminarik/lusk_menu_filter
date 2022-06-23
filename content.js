@@ -1,9 +1,5 @@
+const lusk_menu_ext_disabled = true
 
-//if (window.location.host.startsWith("data7.comgate"))
-//	Array.from(document.querySelectorAll("div")).forEach(x=>x.style.backgroundColor="#ffa5a5");
-	
-const lusk_menu_ext_disabled = false
-	
 if (
 	lusk_menu_ext_disabled || (
 	!(window.location.host.startsWith('data7.comgate')) &&
