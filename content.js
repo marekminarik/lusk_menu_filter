@@ -116,7 +116,6 @@ function init_menu_filter() {
         menu_filter_input_elem.focus()
         
         let inp_text = menu_filter_input_elem.value + (e.key.length > 1 ? '' : e.key)
-        console.log(inp_text)
 
         if (inp_text < 3) {
             return
