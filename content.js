@@ -3,7 +3,7 @@ const lusk_menu_ext_disabled = false
 let lusk_ext_users_disable = ['test']
 
 if (
-    (lusk_ext_users_disable.includes(lusk_ext_current_user ?? false)) || (
+    (lusk_ext_users_disable.includes(window.lusk_ext_current_user)) || (
 	!(window.location.host.startsWith('data7.comgate')) &&
 	!(window.location.host.startsWith('localhost:8081')) &&
 	!(window.location.host.startsWith('lusk-test')))
