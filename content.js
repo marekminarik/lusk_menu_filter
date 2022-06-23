@@ -1,10 +1,9 @@
 const lusk_menu_ext_disabled = true
 
 if (
-	lusk_menu_ext_disabled || (
 	!(window.location.host.startsWith('data7.comgate')) &&
 	!(window.location.host.startsWith('localhost:8081')) &&
-	!(window.location.host.startsWith('lusk-test')))
+	!(window.location.host.startsWith('lusk-test'))
 ) {
     throw new Error('filtrování LUSK menu funguje pouze na stránkách LUSKu')
 }
@@ -65,6 +64,10 @@ function normalize(str) {
 
 
 function init_menu_filter() {
+
+    if (lusk_menu_ext_disabled === true) {
+        return
+    }
 
     let nodes = getLeaves(document.querySelector('.nav,.navbar-nav,.navbar-middle,.pull-left,.nav'))
 
