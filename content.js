@@ -1,9 +1,12 @@
 const lusk_menu_ext_disabled = true
 
+let lusk_ext_users_disable = ['test']
+
 if (
+    (lusk_ext_users_disable.includes(lusk_ext_current_user)) || (
 	!(window.location.host.startsWith('data7.comgate')) &&
 	!(window.location.host.startsWith('localhost:8081')) &&
-	!(window.location.host.startsWith('lusk-test'))
+	!(window.location.host.startsWith('lusk-test')))
 ) {
     throw new Error('filtrování LUSK menu funguje pouze na stránkách LUSKu')
 }
