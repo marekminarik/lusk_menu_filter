@@ -6,7 +6,7 @@ if (
 	!(window.location.host.startsWith('data7.comgate')) &&
 	!(window.location.host.startsWith('localhost:8081')) &&
 	!(window.location.host.startsWith('lusk-test')) &&
-	!(window.location.host.startsWith('lusk.comgate')) &&
+	!(window.location.host.startsWith('lusk.comgate'))
 ) {
     throw new Error('filtrování LUSK menu funguje pouze na stránkách LUSKu')
 }
